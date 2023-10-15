@@ -85,6 +85,7 @@ header {
   line-height: 1.6rem;
   font-weight: 400;
   margin: 0 auto 30px;
+  color: hsl(0, 1%, 59%);
 }
 
 #btn {
@@ -106,7 +107,7 @@ header {
   cursor: pointer;
 }
 
-.features {
+.main {
   width: 100%;
   height: auto;
   background: hsl(218, 28%, 13%);
@@ -139,12 +140,60 @@ header {
   margin: auto;
   line-height: 1.5rem;
   margin-bottom: 30px;
+  color: hsl(0, 1%, 59%);
 }
 
 .service-text h2 {
   font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
   margin-bottom: 10px;
+  color: #fff;
+}
+
+.product {
+  width: 80%;
+  min-height: 50vh;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.product > img {
+  width: 50%;
+  height: auto;
+}
+
+.product-text {
+  width: 45%;
+}
+
+.product-text h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.product-text p {
+  margin-bottom: 1rem;
+  line-height: 1.2rem;
+  color: hsl(0, 1%, 59%);
+}
+
+.product-text a {
+  color: hsl(176, 68%, 64%);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border-bottom: 0.15rem solid hsl(176, 68%, 64%);
+  padding-bottom: 0.125rem;
+}
+
+.product-text a img {
+  width: 20px;
+  margin-left: 5px;
 }
 
 @media (max-width: 900px) {
@@ -160,6 +209,28 @@ header {
   .services {
     width: 85%;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .service-text h2 {
+    font-size: 1.4rem;
+  }
+  .service-text p {
+    font-size: 1rem;
+  }
+  .product {
+    flex-direction: column;
+    width: 85%;
+  }
+  .product > img {
+    width: 70%;
+  }
+  .product-text {
+    width: 80%;
+  }
+  .product-text h1 {
+    font-size: 1.5rem;
+  }
+  .product-text p {
+    font-size: 1rem;
   }
 }
 
