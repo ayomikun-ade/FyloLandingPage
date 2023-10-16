@@ -201,6 +201,7 @@ header {
   /* min-height: 70vh; */
   margin: auto;
   margin-top: 4rem;
+  margin-bottom: 4rem;
   /* display: flex; */
   justify-content: space-between;
   flex-wrap: wrap;
@@ -213,7 +214,7 @@ header {
 .testimonial::after {
   content: url(./images/bg-quotes.png);
   position: absolute;
-  top: 22%;
+  top: -18%;
   left: -1%;
 }
 
@@ -269,6 +270,7 @@ header {
   width: 60%;
   height: 35vh;
   margin: auto;
+  margin-top: 2rem;
   background-color: hsl(217, 28%, 15%);
   border-radius: 5px;
   display: flex;
