@@ -425,6 +425,9 @@ a .fab {
     margin-bottom: 35px;
     line-height: 1.2rem;
   }
+  .location {
+    width: 90%;
+  }
   .about {
     margin: 30px 0;
   }
