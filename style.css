@@ -196,12 +196,139 @@ header {
   margin-left: 5px;
 }
 
+.testimonial {
+  width: 85%;
+  min-height: 70vh;
+  margin: auto;
+  margin-top: 4rem;
+  /* display: flex; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  position: relative;
+}
+
+.testimonial::after {
+  content: url(./images/bg-quotes.png);
+  position: absolute;
+  top: 22%;
+  left: -1%;
+}
+
+.card {
+  height: auto;
+  background-color: hsl(219, 30%, 18%);
+  padding: 25px 15px;
+  box-shadow: 2px 2px 3px hsl(217, 27%, 20%);
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  line-height: 1.35rem;
+}
+
+.profile-wrap {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.pro-1 {
+  background: url(./images/profile-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.pro-2 {
+  background: url(./images/profile-2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.pro-3 {
+  background: url(./images/profile-3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-text span {
+  font-size: 0.9rem;
+  color: #e2e1e1;
+}
+
+.signup {
+  width: 60%;
+  height: 35vh;
+  margin: auto;
+  background-color: hsl(217, 28%, 15%);
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  padding: 30px 20px;
+  z-index: 1;
+  position: relative;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.signup-text h1 {
+  margin-bottom: 1rem;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+input[type="email"] {
+  width: 50%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 25px;
+  margin-right: 1.5rem;
+  background-color: #fff;
+}
+
+.submit {
+  width: 25%;
+  padding: 14px 20px;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  background-color: hsl(198, 60%, 50%);
+}
+.submit:hover {
+  background-color: hsl(176, 68%, 64%);
+}
+
 @media (max-width: 900px) {
   header {
     background: url(./images/bg-curvy-mobile.svg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100% 220px;
+  }
+
+  .testimonial {
+    grid-template-columns: repeat(1, 350px);
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  .testimonial::after {
+    top: -5%;
+    left: 22%;
+  }
+  .signup {
+    margin-top: 50px;
   }
 }
 
@@ -221,7 +348,7 @@ header {
     width: 85%;
   }
   .product > img {
-    width: 70%;
+    width: 80%;
   }
   .product-text {
     width: 80%;
@@ -231,6 +358,33 @@ header {
   }
   .product-text p {
     font-size: 1rem;
+  }
+  .signup {
+    width: 90%;
+    height: 40vh;
+    /* margin: auto;
+    position: relative;
+    top: 60%; */
+  }
+  .signup-text {
+    width: 90%;
+    margin: auto;
+  }
+  .signup-text h1 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  input[type="email"],
+  .submit {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
   }
 }
 
@@ -272,5 +426,15 @@ header {
   }
   #btn {
     width: 200px;
+  }
+
+  .testimonial {
+    width: 90%;
+    min-height: 100vh;
+    margin: 100px auto 0;
+  }
+  .testimonial::after {
+    top: -5%;
+    left: 5%;
   }
 }
